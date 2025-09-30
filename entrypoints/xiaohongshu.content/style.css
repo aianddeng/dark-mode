@@ -1,0 +1,35 @@
+img {
+  opacity: 0.25 !important;
+  transition: opacity 0.8s !important;
+}
+
+img:hover {
+  opacity: 0.75 !important;
+}
+
+.header-container header > a,
+.header-container header > .right,
+.main-container .side-bar,
+.with-side-bar.main-content .channel-container {
+  display: none !important;
+}
+
+.cover.ld::before,
+.cover.ld::after,
+.comment-inner-container .img-box::before,
+.comment-inner-container .img-box::after {
+  display: none !important;
+}
+
+.with-side-bar.main-content {
+  padding-left: unset !important;
+}
+
+.media-container .swiper-wrapper {
+  opacity: 0.25 !important;
+  transition: opacity 0.8s !important;
+}
+
+.media-container .swiper-wrapper:hover {
+  opacity: 0.75 !important;
+}

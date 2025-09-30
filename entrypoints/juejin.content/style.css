@@ -1,0 +1,70 @@
+img {
+  opacity: 0.25 !important;
+  transition: opacity 0.8s !important;
+}
+
+img:hover {
+  opacity: 0.75 !important;
+}
+
+.container > .view {
+  margin-top: unset !important;
+}
+
+.top-banners-container,
+.main-header,
+.index-aside,
+.index-nav,
+.view .view-nav,
+.global-component-box,
+.timeline-entry-list .item:has(.advertisement),
+.timeline-entry-list .jj-recommend-users,
+.timeline-entry-list .entry-footer {
+  display: none !important;
+}
+
+.timeline-entry-list .title-row {
+  font-size: 16px !important;
+  opacity: 0.75 !important;
+}
+
+.timeline-entry-list {
+  margin: unset !important;
+  width: unset !important;
+}
+
+.header-with-banner {
+  top: unset !important;
+}
+
+#sidebar-container,
+.article-suspended-panel,
+.author-info-block,
+.author-info-block + img,
+.article-end,
+.article-end + .column-container,
+.recommended-area,
+.comment-form.comment-editor,
+.bottom-login-guide {
+  display: none !important;
+}
+
+.main-area.article-area {
+  width: unset !important;
+}
+
+.article-title {
+  font-size: 18px !important;
+  opacity: 0.75 !important;
+}
+
+.article-viewer > p:has(> video),
+.article-viewer > p:has(> img) {
+  width: 30% !important;
+  transition: width 0.8s !important;
+}
+
+.article-viewer > p:has(> video):hover,
+.article-viewer > p:has(> img):hover {
+  width: 100% !important;
+}

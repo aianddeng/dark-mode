@@ -1,0 +1,125 @@
+img {
+  opacity: 0.25 !important;
+}
+
+img:hover {
+  opacity: 0.75 !important;
+  transition: opacity 0.8s !important;
+}
+
+/* 顶部 */
+.AppHeader>div>*:nth-child(1),
+.AppHeader>div>*:nth-child(3),
+.AppHeader>div div:has(>nav)>div,
+.AppHeader>div nav a:not([href="https://www.zhihu.com/"]):not([href="https://www.zhihu.com/hot"])
+{
+  display: none !important;
+}
+
+/* 头部 */
+.WriteArea,
+.Pc-Business-Card-PcTopFeedBanner {
+  display: none !important;
+}
+
+/* 右侧 */
+[data-za-detail-view-path-module="RightSideBar"] {
+  display: none !important;
+}
+
+/* 主栏 */
+.Topstory-container {
+  width: auto !important;
+}
+
+.Topstory-mainColumn {
+  width: 100% !important;
+}
+
+/* 广告 */
+.TopstoryItem--advertCard {
+  display: none !important;
+}
+
+/* 输入框 */
+.Comments-container > div > div:has(input) {
+  display: none !important;
+}
+
+.ContentItem-title {
+  font-size: 16px !important;
+  opacity: 0.75 !important;
+}
+
+.ContentItem-title:hover {
+  opacity: 1 !important;
+}
+
+/* 回答-缩略图 */
+.RichContent-cover {
+  display: none !important;
+}
+
+.RichContent div:has(> video),
+.RichContent-inner div:has(> video),
+.RichContent div:has(> img),
+.RichContent-inner div:has(> img) {
+  width: 30% !important;
+  transition: width 0.8s !important;
+}
+
+.RichContent div:has(> video):hover,
+.RichContent-inner div:has(> video):hover,
+.RichContent div:has(> img):hover,
+.RichContent-inner div:has(> img):hover {
+  width: 100% !important;
+}
+
+/* 回答-用户信息 */
+.ContentItem-meta {
+  display: none !important;
+}
+
+/* 回答-动作 */
+.ContentItem-actions > * {
+  display: none !important;
+}
+
+/* 回答-评论列表展开 */
+.ContentItem-actions > *:nth-child(2) {
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* 评论-弹窗 */
+.Modal-content > div > div:has(input) {
+  display: none !important;
+}
+
+/* 详情页-广告 */
+.Pc-word-new {
+  display: none !important;
+}
+
+/* 详情页-侧栏 */
+.QuestionHeader-side {
+  display: none !important;
+}
+
+/* 详情页-回答 */
+.RichContent div:has(> .Reward) {
+  display: none !important;
+}
+
+/* 热榜 */
+.HotList-list .HotItem-img img {
+  display: none !important;
+}
+
+.HotList-list .HotItem-metrics {
+  display: none !important;
+}
+
+.ListShortcut > div:has(+ .HotList) {
+  display: none !important;
+}
