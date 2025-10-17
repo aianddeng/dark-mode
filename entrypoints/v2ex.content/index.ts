@@ -1,7 +1,7 @@
 import "./style.css"
 
 export default defineContentScript({
-  matches: ["*://*.zhihu.com/*"],
+  matches: ["*://*.v2ex.com/*"],
   runAt: "document_start",
   main(ctx) {
     const ui = createIntegratedUi(ctx, {

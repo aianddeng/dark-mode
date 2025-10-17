@@ -1,0 +1,35 @@
+img {
+  opacity: 0.25 !important;
+  transition: opacity 0.8s !important;
+}
+
+img:hover {
+  opacity: 0.5 !important;
+}
+
+#Top,
+#Rightbar,
+#Bottom,
+#SecondaryTabs,
+#Main > .box:last-child {
+  display: none !important;
+}
+
+#Main {
+  margin: 0 20px !important;
+}
+
+body,
+.content {
+  min-width: unset !important;
+  max-width: unset !important;
+}
+
+.header > .fr,
+.header > .fr ~ h1 ~ * {
+  display: none !important;
+}
+
+div:has(> .adsbygoogle) {
+  display: none !important;
+}
