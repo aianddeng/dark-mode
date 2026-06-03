@@ -1,3 +1,10 @@
+import { storage } from "wxt/utils/storage"
+import { DEFAULTS } from "@/utils/storage"
+
 export default defineBackground(() => {
-  console.log('Hello background!', { id: browser.runtime.id });
-});
+  browser.runtime.onInstalled.addListener(({ reason }) => {
+    if (reason === "install") {
+      storage.setItem("local:settings", DEFAULTS)
+    }
+  })
+})

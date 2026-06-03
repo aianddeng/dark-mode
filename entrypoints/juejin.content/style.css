@@ -1,70 +1,70 @@
 img {
-  opacity: 0.25 !important;
+  opacity: var(--dm-image-opacity, 0.25) !important;
   transition: opacity 0.8s !important;
 }
 
 img:hover {
-  opacity: 0.5 !important;
+  opacity: var(--dm-image-hover-opacity, 0.5) !important;
 }
 
-.container > .view {
+html:not([data-dm-off]) .container > .view {
   margin-top: unset !important;
 }
 
-.top-banners-container,
-.main-header,
-.index-aside,
-.index-nav,
-.view .view-nav,
-.global-component-box,
-.timeline-entry-list .item:has(.advertisement),
-.timeline-entry-list .jj-recommend-users,
-.timeline-entry-list .entry-footer {
+html:not([data-dm-off]) .top-banners-container,
+html:not([data-dm-off]) .main-header,
+html:not([data-dm-off]) .index-aside,
+html:not([data-dm-off]) .index-nav,
+html:not([data-dm-off]) .view .view-nav,
+html:not([data-dm-off]) .global-component-box,
+html:not([data-dm-off]) .timeline-entry-list .item:has(.advertisement),
+html:not([data-dm-off]) .timeline-entry-list .jj-recommend-users,
+html:not([data-dm-off]) .timeline-entry-list .entry-footer {
   display: none !important;
 }
 
-.timeline-entry-list .title-row {
+html:not([data-dm-off]) .timeline-entry-list .title-row {
   font-size: 16px !important;
   opacity: 0.75 !important;
 }
 
-.timeline-entry-list {
+html:not([data-dm-off]) .timeline-entry-list {
   margin: unset !important;
   width: unset !important;
 }
 
-.header-with-banner {
+html:not([data-dm-off]) .header-with-banner {
   top: unset !important;
 }
 
-#sidebar-container,
-.article-suspended-panel,
-.author-info-block,
-.author-info-block + img,
-.article-end,
-.article-end + .column-container,
-.recommended-area,
-.comment-form.comment-editor,
-.bottom-login-guide {
+html:not([data-dm-off]) #sidebar-container,
+html:not([data-dm-off]) .article-suspended-panel,
+html:not([data-dm-off]) .author-info-block,
+html:not([data-dm-off]) .author-info-block + img,
+html:not([data-dm-off]) .article-end,
+html:not([data-dm-off]) .article-end + .column-container,
+html:not([data-dm-off]) .recommended-area,
+html:not([data-dm-off]) .comment-form.comment-editor,
+html:not([data-dm-off]) .bottom-login-guide {
   display: none !important;
 }
 
-.main-area.article-area {
+html:not([data-dm-off]) .main-area.article-area {
   width: unset !important;
 }
 
-.article-title {
+html:not([data-dm-off]) .article-title {
   font-size: 18px !important;
   opacity: 0.75 !important;
 }
 
-.article-viewer > p:has(> video),
-.article-viewer > p:has(> img) {
-  width: 30% !important;
+html:not([data-dm-off]) .article-viewer > p:has(> video),
+html:not([data-dm-off]) .article-viewer > p:has(> img) {
+  width: var(--dm-shrink-width, 30%) !important;
   transition: width 0.8s !important;
 }
 
-.article-viewer > p:has(> video):hover,
-.article-viewer > p:has(> img):hover {
+html:not([data-dm-no-hover]):not([data-dm-off]) .article-viewer > p:has(> video):hover,
+html:not([data-dm-no-hover]):not([data-dm-off]) .article-viewer > p:has(> img):hover {
   width: 100% !important;
 }
